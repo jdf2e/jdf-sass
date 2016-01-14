@@ -1,0 +1,44 @@
+{
+  "name": "jdf-sass",
+  "version": "1.0.11",
+  "description": "A library for promises (CommonJS/Promises/A,B,D)",
+  "homepage": "https://github.com/putaoshu/jdf",
+  "author": {
+    "name": "wshxbqq",
+    "email": "wshxbqq@gmail.com",
+    "url": "https://github.com/wshxbqq/jdf-sass"
+  },
+  "keywords": [
+    "jdf-sass"
+  ],
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/wshxbqq/jdf-sass/issues"
+  },
+  "license": "",
+  "main": "index.js",
+  "files": [
+    "scripts",
+    "node-sass",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wshxbqq/jdf-sass"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {},
+  "scripts": {
+	 "install": "node scripts/install.js"
+  },
+  "directories": {},
+  "devDependencies": {},
+  "maintainers": [
+    {
+      "name": "wshxbqq",
+      "email": "wshxbqq@gmail.com"
+    }
+  ]
+}
