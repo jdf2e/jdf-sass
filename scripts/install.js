@@ -3,13 +3,6 @@ console.log("Down loading ... Sass Lib");
 var fs = require('fs');
 var http = require('http');
 
-var _vFolder="node-sass/vendor/"+process.platform+"-"+process.arch+"-"+process.versions.modules;
-if (!fs.existsSync(_vFolder)) {
-	fs.mkdirSync(_vFolder);
-}
-
-var bindingNodePath=_vFolder+"/binding.node";
-
 var download = function(url, dest, cb) {
     var file = fs.createWriteStream(dest);
     var request = http.get(url, function(response) {
@@ -22,12 +15,12 @@ var download = function(url, dest, cb) {
         response.pipe(file);
 
         file.on('finish', function() {
-            file.close(cb);  // close() is async, call cb after close completes.
+            file.close(cb); // close() is async, call cb after close completes.
         });
     });
 
     // check for request error too
-    request.on('error', function (err) {
+    request.on('error', function(err) {
         fs.unlink(dest);
 
         if (cb) {
@@ -44,13 +37,25 @@ var download = function(url, dest, cb) {
     });
 };
 
-download("http://cdn.original-fun.com/jdf/node-sass-binaries/"+process.platform+"-"+process.arch+"-"+process.versions.modules+"_binding.node",
-	bindingNodePath,
-	function(err){
-	if(!err){
-		console.log("done");
-
-	}
-})
 
 
+//"+process.versions.modules
+var version_modules = [11, 14, 42, 43, 44, 45, 46, 47];
+
+for (var i in version_modules) {
+    (function(moduleVer) {
+        var nodeBindingName = "node-sass/vendor/" + process.platform + "-" + process.arch + "-" + moduleVer;
+        if (!fs.existsSync(nodeBindingName)) {
+            fs.mkdirSync(nodeBindingName);
+        }
+
+        var bindingNodePath = nodeBindingName + "/binding.node";
+        download("http://cdn.original-fun.com/jdf/node-sass-binaries/" + process.platform + "-" + process.arch + "-" + moduleVer + "_binding.node",
+            bindingNodePath,
+            function(err) {
+                if (!err) {
+                    console.log("finish:" + nodeBindingName);
+                }
+            })
+    })(version_modules[i])
+}
