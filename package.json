@@ -1,7 +1,7 @@
 {
   "name": "jdf-sass",
   "version": "1.0.13",
-  "description": "A library for promises (CommonJS/Promises/A,B,D)",
+  "description": "jdf-sass (jdf inner package)",
   "homepage": "https://github.com/putaoshu/jdf",
   "author": {
     "name": "wshxbqq",
