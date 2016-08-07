@@ -1,13 +1,5 @@
 {
-  "name": "jdf-sass",
-  "version": "1.0.13",
-  "description": "A library for promises (CommonJS/Promises/A,B,D)",
-  "homepage": "https://github.com/putaoshu/jdf",
-  "author": {
-    "name": "wshxbqq",
-    "email": "wshxbqq@gmail.com",
-    "url": "https://github.com/wshxbqq/jdf-sass"
-  },
+  
   "keywords": [
     "jdf-sass"
   ],
@@ -17,28 +9,57 @@
   },
   "license": "",
   "main": "index.js",
+
+  "author": {
+    "name": "wshxbqq",
+    "email": "wshxbqq@gmail.com",
+    "url": "https://github.com/wshxbqq/jdf-sass"
+  },
+  "bugs": {
+    "url": "https://github.com/wshxbqq/jdf-sass/issues"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "description": "A fork from node-sass,  jdf use only",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "416f098659314365ca1dd9c71a28945973e59406",
+    "size": 16149,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/jdf-sass/download/jdf-sass-1.0.17.tgz"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
   "files": [
     "scripts",
     "node-sass",
     "index.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/wshxbqq/jdf-sass"
-  },
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "dependencies": {},
-  "scripts": {
-	 "install": "node scripts/install.js"
-  },
-  "directories": {},
-  "devDependencies": {},
+  "gitHead": "6986f6dcd14021458fdb1ec586ff35cb7bda5502",
+  "homepage": "https://github.com/putaoshu/jdf",
+  "keywords": [
+    "jdf-sass"
+  ],
+  "license": "",
+  "main": "index.js",
   "maintainers": [
     {
       "name": "wshxbqq",
       "email": "wshxbqq@gmail.com"
     }
-  ]
+  ],
+  "name": "jdf-sass",
+  "optionalDependencies": {},
+  "publish_time": 1464627377283,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wshxbqq/jdf-sass.git"
+  },
+  "scripts": {
+    "install": "node scripts/install.js"
+  },
+  "version": "1.0.17"
 }
