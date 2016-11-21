@@ -5,7 +5,7 @@
   ],
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/wshxbqq/jdf-sass/issues"
+    "url": "https://github.com/jdf2e/jdf-sass/issues"
   },
   "license": "",
   "main": "index.js",
@@ -13,10 +13,10 @@
   "author": {
     "name": "wshxbqq",
     "email": "wshxbqq@gmail.com",
-    "url": "https://github.com/wshxbqq/jdf-sass"
+    "url": "https://github.com/jdf2e/jdf-sass"
   },
   "bugs": {
-    "url": "https://github.com/wshxbqq/jdf-sass/issues"
+    "url": "https://github.com/jdf2e/jdf-sass/issues"
   },
   "contributors": [],
   "dependencies": {},
@@ -56,7 +56,7 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wshxbqq/jdf-sass.git"
+    "url": "git://github.com/jdf2e/jdf-sass.git"
   },
   "scripts": {
     "install": "node scripts/install.js"
